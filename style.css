@@ -3,9 +3,345 @@ Theme Name: Good Theme
 Author: Lyndon Fox
 Version: 1.0.0
 */
+body {
+    background: bisque;
+}
 p {
     color: green;
 }
 a {
-     text-decoration: none
+     text-decoration: none;
+     color: firebrick;
+     display: block;
+}
+nav {
+    background-color: darkgoldenrod;
+  
+    padding-left: 150px;
+  
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+
+}
+
+/* .page {
+    max-width: 1400px;
+    margin: 0 auto;
+} */
+/* Text */
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    margin: 0 0 1em 0;
+    font-size: 2.4em;
+    font-weight: bold;
+    line-height: 1.1em;
+    color: #000000;
+}
+
+h2 {
+    margin: 0 0 .5em 0;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+h3 {
+    margin: 0 0 .5em 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0 0 1.5em 0;
+    font-size: 1.em;
+    font-weight: 700;
+    font-variant: small-caps;
+    font-style: oblique;
+    color: #fff;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #09ff00;
+    font-size: 1.em;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a.btn {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(255, 187, 0);
+    border: 1px solid rgb(255, 187, 0);
+    padding: 4px 15px;
+    transition: .5s;
+}
+
+a.btn:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+/* layout  */
+/* .container-1 {
+    width: 1600px;
+    margin: 0 auto;
+} */
+
+/* div.page {
+    width: 1200px;
+    margin: 0 auto;
+} */
+/*Header */
+
+header {
+    width: 100vw;
+    height: 500px;
+    background-image: url(assets/img/headers/riccardo-mion-645217-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.logo {
+    width: 750px;
+    padding-top: 88px;
+}
+
+.quote {
+    float: right;
+    padding: 350px 20px 0 0;
+}
+
+.clearfix:after {
+    contain: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.main-heading {
+    clear: both;
+}
+
+div.quote {
+    text-align: center;
+}
+
+.find-out {
+    text-align: center;
+}
+
+/* .brand-name {
+    width: 340px;
+    padding:7px 0 0 100px;
+} */
+.main-heading h4 {
+    margin: 0 0 1em 0;
+}
+
+.main-heading .btn {
+    text-align: center;
+}
+
+.navbar-link.is-active,
+a.navbar-item.is-active {
+    color: rgb(0, 255, 0);
+}
+
+.navbar-link.is-active,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:hover {
+    background-color: rgb(255, 187, 0);
+    color: rgb(255, 255, 255);
+}
+
+.navbar-end a.navbar-item.is-active {
+    background-color: rgb(255, 187, 0);
+}
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    font-size: 1.1em;
+}
+#menu-item-28{
+    color: #000000;
+}
+
+/* nav ul li {
+   
+      flex-direction: row; 
+    flex-wrap: wrap;
+    justify-items: flex-end; 
+     float: left;
+     padding: 20px 30px 0 0;
+     margin-right: 60px
+}
+nav ul li a {
+    flex-direction: row;
+}   */
+
+
+/* section-main */
+
+
+article.too-big {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px 0 30px 0;
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+
+}
+
+.axe {
+    display: flex;
+    flex: 1 0 60%;
+}
+
+.too-big-text {
+    display: flex;
+    flex: 1 0 39%;
+    align-items: flex-end;
+    font-size: .9em;
+    padding: 20px
+}
+
+/* .find-out {
+    text-align: center;
+    padding: 0 0 30px 0;
+} */
+.too-big h1 {
+    margin-top: 40px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.we-do {
+    text-align: center;
+    padding: 30px 0 40px 20px;
+}
+
+.we-do h4 {
+    color: #000000;
+}
+
+.columns {
+    width: 100%;
+}
+
+.column {
+    text-align: center;
+}
+
+.column h3 {
+    padding-top: 15px;
+}
+
+.is-one-third img {
+    border-radius: 50% 50%;
+    border-style: solid;
+    opacity: 0.7;
+    transform: scale(1.10);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.is-one-third img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.row>div {
+    padding: 20px;
+}
+
+.services-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/images/headers/joe-anderson-669724-unsplash.jpg);
+}
+
+/* .contact-heading {
+    background-image: url(assets/img/headers/ugne-vasyliute-557433-unsplash.jpg);
+    background-position: bottom;
+} */
+
+/* section-main */
+
+/* blog */
+
+.blog-1 {
+    text-align: center;
+    padding: 40px 0 0 0;
+    margin-bottom: 0;
+}
+
+.blog-2 {
+    margin: 0 auto;
+    padding: 15px 100px;
+    width: 1200px;
+}
+
+.blog-3 {
+    margin: 0 auto;
+}
+
+/* service */
+
+.down-to-earth {
+
+    width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 30px 10px 30px 70px;
+    font-size: 1em
+}
+
+.columns {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.service {
+    padding-bottom: 70px;
+}
+
+.is-half p {
+    font-size: .9em;
+    padding: 55px
+}
+/* footer {
+    width: 1200px;
+    height: 500px;url(/assets/img/headers/ugne-vasyliute-557433-unsplash.jpg);
+    background-image: 
+    background-size: cover;
+    background-position: bottom;
+    margin: 0 auto;
+
+} */
+
+.social-footer {
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px
 }

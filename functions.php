@@ -29,7 +29,9 @@ function good_theme_setup(){
 ) );
  //register menu
  register_nav_menus(array(
-     'primary-menu' => __('Primary')
+     'primary-menu' => __('Primary'),
+     'footer-menu' => __('Footer'),
+     'social-menu' => __('Social')
  ));
 }
 
