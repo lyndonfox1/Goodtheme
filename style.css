@@ -1,0 +1,11 @@
+/*
+Theme Name: Good Theme
+Author: Lyndon Fox
+Version: 1.0.0
+*/
+p {
+    color: green;
+}
+a {
+     text-decoration: none
+}
