@@ -12,7 +12,7 @@ p {
 a {
      text-decoration: none;
      color: firebrick;
-     display: block;
+     display: inline;
 }
 nav {
     background-color: darkgoldenrod;
@@ -131,7 +131,7 @@ header {
     contain: ".";
     visibility: hidden;
     display: block;
-    height: 0;
+    height: 0px;
     clear: both;
 }
 

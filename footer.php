@@ -26,10 +26,7 @@ Copyright <?php echo date('Y'); ?>
                     </span>
                 </div>
                
-                <p class="logo-small">
-                    <!-- <img src="/assets/img/headers/ugne-vasyliute-557433-unsplash.jpg" width="1200px"> -->
-                    <?php get_the_thumbnail('assets/img/headers/ugne-vasyliute-557433-unsplash.jpg'); ?>
-                </p>
+             
                 <span class="copyright">&copy; Copyright 2018 Tree Cut &amp; Trim Ltd - Made with &hearts; in
                     Christchurch</span>
 
