@@ -20,6 +20,13 @@
 <?php the_custom_logo();?>
 </div>
 </section>
+<?php if(is_page('contact')): ?>
+<h1>I am a content page</h1>
+<?php endif; ?>
+<?php if(is_home()): ?>
+<h1>I am a home (blog) page</h1>
+<?php endif; ?>
+
 </header>
 
    

@@ -12,14 +12,13 @@ p {
 a {
      text-decoration: none;
      color: firebrick;
-     display: inline;
+     /* display: inline; */
+     padding: 10px;
 }
 nav {
     background-color: darkgoldenrod;
-  
-    padding-left: 150px;
-  
-}
+  text-align: center;
+ }
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -80,7 +79,7 @@ a {
 }
 
 a:visited {
-    color: #ffffff;
+    color: firebrick;
 }
 
 a.btn {

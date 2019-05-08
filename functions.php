@@ -51,7 +51,7 @@ add_action('wp_enqueue_scripts', 'good_enqueue_scripts');
 
 
 
-if (!function_exists('good_widgets_init')):
+if (!function_exists('good_theme_widgets_init')):
     function good_theme_widgets_init() {
 
         register_sidebar(array(
@@ -63,4 +63,27 @@ if (!function_exists('good_widgets_init')):
       
     }
 endif;
+
 add_action('widgets_init', 'good_theme_widgets_init');
+
+if (!function_exists('good_create_post_types')):
+    function good_create_post_types() {
+
+register_post_type(
+    'job_services',
+array(
+    'labels' => array(
+    'name' => __('services'),
+    'singular_name' => __('services'),
+),
+'public' => true,
+'has_achive' => true,
+'menu_position' => 5,
+'supports' => array('title', 'editor','thumbnail')
+)
+);
+
+    }
+
+    endif;
+        add_action('init', 'good_create_post_types');
