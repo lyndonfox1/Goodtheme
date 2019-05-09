@@ -51,39 +51,27 @@ add_action('wp_enqueue_scripts', 'good_enqueue_scripts');
 
 
 
-if (!function_exists('good_theme_widgets_init')):
-    function good_theme_widgets_init() {
 
-        register_sidebar(array(
-            'name'          => __( 'Sidebar', 'theme_text_domain' ),
-            'id'            => 'sidebar-1',    // ID should be LOWERCASE  ! ! !
-            'description'   => 'Add widgets here',
-             )); 
-        
-      
-    }
-endif;
+require_once get_template_directory() . '/inc/custom-post-types.php';
+require_once get_template_directory() . '/inc/taxonomies.php';
+require_once get_template_directory() . '/inc/custom-meta-box.php';
+require_once get_template_directory() . '/inc/widgets.php';
 
-add_action('widgets_init', 'good_theme_widgets_init');
 
-if (!function_exists('good_create_post_types')):
-    function good_create_post_types() {
+ 
+//hook into the init action and call create_book_taxonomies when it fires
 
-register_post_type(
-    'job_services',
-array(
-    'labels' => array(
-    'name' => __('services'),
-    'singular_name' => __('services'),
-),
-'public' => true,
-'has_achive' => true,
-'menu_position' => 5,
-'supports' => array('title', 'editor','thumbnail')
-)
-);
+ 
+//create a custom taxonomy name it topics for your posts
+ 
+ // function good_theme_create_taxonomies() {
+ 
+// Add new taxonomy, make it hierarchical like categories
+//first do the translations part for GUI
+ 
 
-    }
 
-    endif;
-        add_action('init', 'good_create_post_types');
+
+
+
+/* Create one or more meta boxes to be displayed on the post editor screen. */
