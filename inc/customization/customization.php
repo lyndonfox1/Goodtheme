@@ -1,9 +1,10 @@
 <?php
 
 
-function good_theme_customize_register($wp_customize) {
+function gt_customize_register($wp_customize) {
     
-    require_once get_template_directory() . '/inc//customization/contact.php';
+    require_once get_template_directory() . '/inc/customization/contact.php';
+    require_once get_template_directory() . '/inc/customization/background-image.php';
 }
 
-add_action('customize_register', 'good_theme_customize_register');
+add_action('customize_register', 'gt_customize_register');

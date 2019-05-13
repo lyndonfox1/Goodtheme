@@ -1,6 +1,6 @@
 <?php
-if (!function_exists('good_theme_create_taxonomies')) :
-    function good_theme_create_taxonomies() {
+if (!function_exists('gt_create_taxonomies')) :
+    function gt_create_taxonomies() {
 
 
 
@@ -32,4 +32,4 @@ if (!function_exists('good_theme_create_taxonomies')) :
 }
 endif;
 
-add_action( 'init', 'good_theme_create_taxonomies', 0 );
+add_action( 'init', 'gt_create_taxonomies', 0 );

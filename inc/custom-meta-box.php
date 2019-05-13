@@ -1,11 +1,11 @@
 <?php
 
-function good_theme_add_post_meta_boxes() {
+function gt_add_post_meta_boxes() {
 
     add_meta_box(
-      'good_theme-post-class',      // Unique ID
+      'gt-post-class',      // Unique ID
       esc_html__( 'Post Class', 'example' ),    // Title
-      'good_theme_post_class_meta_box',   // Callback function
+      'gt_post_class_meta_box',   // Callback function
       'job_services',         // Admin page (or post type)
       'side',         // Context
       'default'         // Priority
@@ -14,23 +14,23 @@ function good_theme_add_post_meta_boxes() {
 
 
   /* Display the post meta box. */
-function good_theme_post_class_meta_box( $post ) { ?>
+function gt_post_class_meta_box( $post ) { ?>
 
-    <?php wp_nonce_field( basename( __FILE__ ), 'good_theme_post_class_nonce' ); ?>
+    <?php wp_nonce_field( basename( __FILE__ ), 'gt_post_class_nonce' ); ?>
   
     <p>
       <label for="good-theme-post-class"><?php _e( "Add a custom CSS class, which will be applied to WordPress' post class.", 'example' ); ?></label>
       <br />
-      <input class="widefat" type="text" name="good-theme-post-class" id="good-theme-post-class" value="<?php echo esc_attr( get_post_meta( $post->ID, 'good_theme_post_class', true ) ); ?>" size="30" />
+      <input class="widefat" type="text" name="good-theme-post-class" id="good-theme-post-class" value="<?php echo esc_attr( get_post_meta( $post->ID, 'gt_post_class', true ) ); ?>" size="30" />
     </p>
   <?php }
 
 
   /* Save the meta box's post metadata. */
-function good_theme_save_post_class_meta( $post_id, $post ) {
+function gt_save_post_class_meta( $post_id, $post ) {
 
     /* Verify the nonce before proceeding. */
-    if ( !isset( $_POST['good_theme_post_class_nonce'] ) || !wp_verify_nonce( $_POST['good_theme_post_class_nonce'], basename( __FILE__ ) ) )
+    if ( !isset( $_POST['gt_post_class_nonce'] ) || !wp_verify_nonce( $_POST['gt_post_class_nonce'], basename( __FILE__ ) ) )
       return $post_id;
   
     /* Get the post type object. */
@@ -44,7 +44,7 @@ function good_theme_save_post_class_meta( $post_id, $post ) {
     $new_meta_value = ( isset( $_POST['good-theme-post-class'] ) ? sanitize_html_class( $_POST['good-theme-post-class'] ) : ’ );
   
     /* Get the meta key. */
-    $meta_key = 'good_theme_post_class';
+    $meta_key = 'gt_post_class';
   
     /* Get the meta value of the custom field key. */
     $meta_value = get_post_meta( $post_id, $meta_key, true );
@@ -63,16 +63,16 @@ function good_theme_save_post_class_meta( $post_id, $post ) {
   }
 
 /* Meta box setup function. */
-function good_theme_post_meta_boxes_setup() {
+function gt_post_meta_boxes_setup() {
 
     /* Add meta boxes on the 'add_meta_boxes' hook. */
-    add_action( 'add_meta_boxes', 'good_theme_add_post_meta_boxes' );
+    add_action( 'add_meta_boxes', 'gt_add_post_meta_boxes' );
   
     /* Save post meta on the 'save_post' hook. */
-    add_action( 'save_post', 'good_theme_save_post_class_meta', 10, 2 );
+    add_action( 'save_post', 'gt_save_post_class_meta', 10, 2 );
   }
 
 
 /* Fire our meta box setup function on the post editor screen. */
-add_action( 'load-post.php', 'good_theme_post_meta_boxes_setup' );
-add_action( 'load-post-new.php', 'good_theme_post_meta_boxes_setup' );
+add_action( 'load-post.php', 'gt_post_meta_boxes_setup' );
+add_action( 'load-post-new.php', 'gt_post_meta_boxes_setup' );

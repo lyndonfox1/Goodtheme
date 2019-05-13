@@ -1,7 +1,7 @@
 <?php
 
-if (!function_exists('good_theme_widgets_init')):
-    function good_theme_widgets_init() {
+if (!function_exists('gt_widgets_init')):
+    function gt_widgets_init() {
 
         register_sidebar(array(
             'name'          => __( 'Sidebar', 'theme_text_domain' ),
@@ -13,4 +13,4 @@ if (!function_exists('good_theme_widgets_init')):
     }
 endif;
 
-add_action('widgets_init', 'good_theme_widgets_init');
+add_action('widgets_init', 'gt_widgets_init');

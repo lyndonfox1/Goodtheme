@@ -14,7 +14,7 @@ array(
 'menu_position' => 5,
 'supports' => array('title', 'editor','thumbnail'),
   'taxonomies' => array('topics'),
-  //'register_meta_box_cb' => 'good_theme_post_Class_meta_box'
+  //'register_meta_box_cb' => 'gt_post_Class_meta_box'
    //'taxonomies' => array('category', 'post_tag')
    
 )
