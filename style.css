@@ -11,7 +11,7 @@ p {
 }
 a {
      text-decoration: none;
-     color: firebrick;
+     color: rgb(91, 52, 10);
      /* display: inline; */
      padding: 10px;
 }
@@ -27,10 +27,21 @@ body {
 
 }
 
-/* .page {
-    max-width: 1400px;
+.sum-text{
+    width: 500px;
     margin: 0 auto;
-} */
+    text-align: center;
+}
+.entry-content {
+    width: 500px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.entry-excerpt {
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
 /* Text */
 .clearfix {
     content: "";
@@ -73,14 +84,12 @@ p {
 }
 
 a {
-    color: #09ff00;
+    color: rgb(77, 38, 10);
     font-size: 1.em;
     font-weight: bold;
 }
 
-a:visited {
-    color: firebrick;
-}
+
 
 a.btn {
     font-size: 1.2em;
@@ -158,22 +167,7 @@ div.quote {
     text-align: center;
 }
 
-.navbar-link.is-active,
-a.navbar-item.is-active {
-    color: rgb(0, 255, 0);
-}
 
-.navbar-link.is-active,
-.navbar-link:hover,
-a.navbar-item.is-active,
-a.navbar-item:hover {
-    background-color: rgb(255, 187, 0);
-    color: rgb(255, 255, 255);
-}
-
-.navbar-end a.navbar-item.is-active {
-    background-color: rgb(255, 187, 0);
-}
 
 .navbar {
     background-color: transparent;
@@ -210,7 +204,17 @@ article.too-big {
     width: 1200px;
     height: 180px;
     margin: 0 auto;
+   
 
+}
+
+.footer-container {
+   
+    width: 100vw;
+    height: 500px;
+    background: url(assets/img/headers/ugne-vasyliute-557433-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .axe {
@@ -224,6 +228,7 @@ article.too-big {
     align-items: flex-end;
     font-size: .9em;
     padding: 20px
+   
 }
 
 /* .find-out {
@@ -327,20 +332,46 @@ article.too-big {
     font-size: .9em;
     padding: 55px
 }
-/* footer {
-    width: 1200px;
-    height: 500px;url(/assets/img/headers/ugne-vasyliute-557433-unsplash.jpg);
-    background-image: 
+footer {
+    width: 800px;
+    /* background-image: url(/assets/img/headers/ugne-vasyliute-557433-unsplash.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
     margin: 0 auto;
 
-} */
+}
 
 .social-footer {
-    width: 25%;
-    float: left;
+    /* width: 25%; */
     text-align: center;
     font-size: 40px;
-    padding-top: 40px
+    padding-top: 40px;
+    margin: 0 auto;
+}
+.footer-container {
+    text-align: center;
+    margin: 0 auto;
+}
+.menu-item {
+    list-style: none;
+}
+.entry-title {
+    text-align: center;
+    padding-top: 25px;
+    color: saddlebrown;
+   
+}
+.widgettitle {
+    text-align: center;
+    padding-top: 25px;
+    color: saddlebrown;
+}
+.widget {
+    list-style: none;
+    text-align: justify;
+    margin: 0 auto;
+}
+.widget li {
+    list-style: none;
+    text-align: center;
 }

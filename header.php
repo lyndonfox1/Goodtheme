@@ -22,6 +22,7 @@
     </head>
     <body <?php body_class(); ?>>
 <header>
+    <div class="header-container">
     <nav class="nav-collapse">
         <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
     </nav>
@@ -30,13 +31,18 @@
             <?php the_custom_logo();?>
         </div>
     </section>
-    <?php if(is_page('contact')): ?>
+ 
+    </div>
+</header>
+<div>
+   
+<?php if(is_page('contact')): ?>
         <h1>I am a content page</h1>
     <?php endif; ?>
     <?php if(is_home()): ?>
         <h1>I am a home (blog) page</h1>
     <?php endif; ?>
-</header>
+</div>
 
    
  

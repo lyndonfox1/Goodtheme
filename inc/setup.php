@@ -63,3 +63,10 @@ if (isset($_GET['activated']) && is_admin()){
     
 endif;
 add_action('after_setup_theme', 'gt_setup');
+
+function gt_remove_menu_items() {
+    if (!is_admin()){
+        remove_menu_page('edit.php?post_type=page');
+    }
+}
+add_action('admin_menu', 'gt_remove_menu_items');

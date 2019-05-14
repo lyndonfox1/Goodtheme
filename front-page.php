@@ -16,6 +16,9 @@
                         and with
                         a better final result.</p>
                 </div>
+                <p>
+                <img src="<?php get_theme_mod(' background-image: url(/assets/img/headers/ugne-vasyliute-557433-unsplash.jpg)' )?>">;
+                </p>
                 <div class="too-big-text">
                     <p>
                         Our mission is to set the benchmark for vegetation management in
@@ -25,6 +28,7 @@
                         on quality, and competitive on price. All work Guaranteed 100%. Free on-site Quotes and
                         Consultations.
                     </p>
+                    <img src="<?php get_theme_mod( '/assets/img/headers/ugne-vasyliute-557433-unsplash.jpg' )?>">;
                 </div>
 
             </article>

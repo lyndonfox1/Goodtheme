@@ -1,3 +1,8 @@
+<div class="footer-container">
+
+
+
+
 <footer>
 <?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
 
@@ -29,7 +34,7 @@ Copyright <?php echo date('Y'); ?>
              
                 <span class="copyright">&copy; Copyright 2018 Tree Cut &amp; Trim Ltd - Made with &hearts; in
                     Christchurch</span>
-
+                    </div>
 
  </body>
  <script>
