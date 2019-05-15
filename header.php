@@ -28,6 +28,7 @@
     </nav>
     <section>
         <div>
+            <!-- <?php the_post_thumbnail(); ?> -->
             <?php the_custom_logo();?>
         </div>
     </section>

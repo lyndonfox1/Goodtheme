@@ -9,6 +9,7 @@ body {
 p {
     color: green;
 }
+
 a {
      text-decoration: none;
      color: rgb(91, 52, 10);
@@ -338,7 +339,6 @@ footer {
     background-size: cover;
     background-position: bottom; */
     margin: 0 auto;
-
 }
 
 .social-footer {
@@ -374,4 +374,8 @@ footer {
 .widget li {
     list-style: none;
     text-align: center;
+}
+.ct-photo {
+    width: 200px;
+    height: auto;
 }
